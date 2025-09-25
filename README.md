@@ -1,31 +1,10 @@
 
-<div align="center">
-  <a href="https://github.com/SafeRL-Lab/Open-Space-Reasoning">
-    <img src="./docs/figures/logo-m4r.png" alt="Logo" width="60%"> 
-  </a>
   
-<h1 align="center" style="font-size: 30px;"><strong><em>M4R</em></strong>:  Measuring Massive Multimodal Understanding and Reasoning in Open Space</h1>
-<p align="center">
-    <!-- <a href="./docs/M4R_paper.pdf">Paper</a> -->
-    <!-- · -->
-    <a href="https://open-space-reasoning.github.io/">Website</a>
-    ·
-    <a href="https://github.com/SafeRL-Lab/Open-Space-Reasoning/">Code</a>
-    ·
-    <a href="https://open-space-reasoning.github.io/#leaderboard-land-air">Leaderboard</a>
-    ·
-    <a href="https://huggingface.co/datasets/Open-Space-Reasoning/Benchmark">Dataset</a>
-    ·
-    <a href="https://huggingface.co/datasets/Open-Space-Reasoning/M4R-zip">Dataset-Zip</a>
-    ·
-    <a href="https://github.com/SafeRL-Lab/Open-Space-Reasoning/issues">Issue</a>
-  </p>
-</div>
+<h1 align="center" style="font-size: 30px;"><strong><em>AccidentBench</em></strong>: Benchmarking Multi-Modal Understanding and Reasoning in Vehicle Accidents and Beyond</h1>
 
----
+
 
 # Content
-  - [Leaderboard](#Leaderboard)
   - [About the Dataset](#About-the-Dataset)
     - [Dataset Format](#Dataset-Format)
     - [Dataset Distribution](#Dataset-Distribution)
@@ -46,58 +25,11 @@
 # M4R: Measuring Massive Multimodal Understanding and Reasoning in Open Space
 -->
 
-## Leaderboard
 
-### Evaluation of Open Space (Land, Water, Air) domains using M4R benchmarks
-
-Each reported number corresponds to the average score (overall, temporal, spatial, and intent reasoning).
-
-| Difficulty | Models                                                                         | Size | Over. Avg. | Temporal | Spatial | Intent |
-| ---------- | ------------------------------------------------------------------------------ | ---- | ---------- | -------- | ------- | ------ |
-| Hard       | [GPT 4o](https://arxiv.org/pdf/2410.21276)                                     | -    | 22.21      | 24.92    | 27.14   | 13.80  |
-| Hard       | [Gemini 2.5 Pro 🥇](https://deepmind.google/models/gemini/pro/)                | -    | **31.01**  | 38.18    | 30.08   | 25.20  |
-| Hard       | [Gemini 1.5 Pro](https://arxiv.org/pdf/2403.05530)                             | -    | 19.07      | 22.53    | 21.57   | 17.25  |
-| Hard       | [Claude 3.5](https://www.anthropic.com/news/claude-3-5-sonnet)                 | -    | 28.89      | 32.84    | 29.18   | 23.41  |
-| Hard       | [InternVL2.5](https://huggingface.co/OpenGVLab/InternVL2_5-26B)                | 26B  | 22.45      | 25.33    | 27.42   | 12.64  |
-| Hard       | [InternVL2.5](https://huggingface.co/OpenGVLab/InternVL2_5-8B)                 | 8B   | 20.39      | 21.30    | 29.41   | 11.42  |
-| Hard       | [InternVL2.5](https://huggingface.co/OpenGVLab/InternVL2_5-4B)                 | 4B   | 17.31      | 17.39    | 23.04   | 13.13  |
-| Hard       | [LLaVA Next](https://huggingface.co/lmms-lab/llava-next-qwen-32b)              | 32B  | 17.83      | 11.28    | 26.09   | 10.10  |
-| Hard       | [LLaVA Video](https://huggingface.co/lmms-lab/LLaVA-Video-7B-Qwen2)            | 7B   | 17.35      | 13.02    | 27.49   | 10.18  |
-| Hard       | [LLaVA OneVision](https://huggingface.co/lmms-lab/llava-onevision-qwen2-7b-ov) | 7B   | 14.27      | 9.55     | 24.74   | 10.15  |
-| Hard       | [Qwen2.5 VL](https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct)              | 32B  | 19.39      | 13.19    | 27.85   | 14.05  |
-| Hard       | [Qwen2.5 VL](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)               | 7B   | 20.34      | 12.31    | 28.40   | 15.48  |
-| | | | | | | |
-| Medium     | [GPT 4o 🥇](https://arxiv.org/pdf/2410.21276)                                  | -    | **41.21**  | 44.89    | 47.03   | 28.19  |
-| Medium     | [Gemini 2.5 Pro](https://deepmind.google/models/gemini/pro/)                   | -    | 41.07      | 41.31    | 48.33   | 33.06  |
-| Medium     | [Gemini 1.5 Pro](https://arxiv.org/pdf/2403.05530)                             | -    | 37.13      | 40.69    | 43.81   | 31.06  |
-| Medium     | [Claude 3.5](https://www.anthropic.com/news/claude-3-5-sonnet)                 | -    | 37.99      | 36.46    | 47.34   | 31.09  |
-| Medium     | [InternVL2.5](https://huggingface.co/OpenGVLab/InternVL2_5-26B)                | 26B  | 36.39      | 37.85    | 47.51   | 27.55  |
-| Medium     | [InternVL2.5](https://huggingface.co/OpenGVLab/InternVL2_5-8B)                 | 8B   | 35.44      | 39.85    | 51.07   | 18.98  |
-| Medium     | [InternVL2.5](https://huggingface.co/OpenGVLab/InternVL2_5-4B)                 | 4B   | 36.53      | 31.21    | 45.36   | 32.68  |
-| Medium     | [LLaVA Next](https://huggingface.co/lmms-lab/llava-next-qwen-32b)              | 32B  | 21.07      | 13.57    | 33.08   | 14.24  |
-| Medium     | [LLaVA Video](https://huggingface.co/lmms-lab/LLaVA-Video-7B-Qwen2)            | 7B   | 24.04      | 19.33    | 30.50   | 19.72  |
-| Medium     | [LLaVA OneVision](https://huggingface.co/lmms-lab/llava-onevision-qwen2-7b-ov) | 7B   | 17.76      | 17.81    | 24.71   | 17.12  |
-| Medium     | [Qwen2.5 VL](https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct)              | 32B  | 29.93      | 23.34    | 41.94   | 25.82  |
-| Medium     | [Qwen2.5 VL](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)               | 7B   | 28.79      | 22.18    | 34.64   | 22.89  |
-| | | | | | | |
-| Easy       | [GPT 4o](https://arxiv.org/pdf/2410.21276)                                     | -    | 45.01      | 55.33    | 38.08   | 43.72  |
-| Easy       | [Gemini 2.5 Pro 🥇](https://deepmind.google/models/gemini/pro/)                | -    | **59.36**  | 61.16    | 54.51   | 58.09  |
-| Easy       | [Gemini 1.5 Pro](https://arxiv.org/pdf/2403.05530)                             | -    | 48.05      | 53.22    | 47.85   | 45.37  |
-| Easy       | [Claude 3.5](https://www.anthropic.com/news/claude-3-5-sonnet)                 | -    | 50.14      | 53.28    | 48.51   | 46.40  |
-| Easy       | [InternVL2.5](https://huggingface.co/OpenGVLab/InternVL2_5-26B)                | 26B  | 55.08      | 58.41    | 53.46   | 44.45  |
-| Easy       | [InternVL2.5](https://huggingface.co/OpenGVLab/InternVL2_5-8B)                 | 8B   | 51.03      | 53.64    | 54.52   | 42.20  |
-| Easy       | [InternVL2.5](https://huggingface.co/OpenGVLab/InternVL2_5-4B)                 | 4B   | 48.93      | 46.55    | 52.31   | 43.65  |
-| Easy       | [LLaVA Next](https://huggingface.co/lmms-lab/llava-next-qwen-32b)              | 32B  | 35.32      | 31.22    | 40.09   | 34.34  |
-| Easy       | [LLaVA Video](https://huggingface.co/lmms-lab/LLaVA-Video-7B-Qwen2)            | 7B   | 30.44      | 29.41    | 34.12   | 31.64  |
-| Easy       | [LLaVA OneVision](https://huggingface.co/lmms-lab/llava-onevision-qwen2-7b-ov) | 7B   | 31.10      | 29.46    | 33.78   | 29.88  |
-| Easy       | [Qwen2.5 VL](https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct)              | 32B  | 48.35      | 50.68    | 47.82   | 44.97  |
-| Easy       | [Qwen2.5 VL](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)               | 7B   | 37.97      | 38.87    | 33.20   | 36.45  |
-
-More results can be found at the link: [https://open-space-reasoning.github.io/](https://open-space-reasoning.github.io/)
 
 
 ## About the Dataset:
-This benchmark includes approximately 2,000 videos and 19,000 human-annotated question-answer pairs, covering a wide range of reasoning tasks (as shown in Figure 1). We provide a **sample set (approximately 4K examples)** for efficiency evaluation, randomly selected from the **full dataset (19K examples)**. All annotations were performed by highly educated annotators, each holding at least a master's degree in engineering-related fields such as mathematics or computer science. The dataset features a variety of video lengths, categories, and frame counts, and spans three primary open-space reasoning scenarios: **land space**, **water space**, and **air space**. An overview of the dataset’s characteristics is shown in Figure 2, which illustrates the distributions of video duration, domain coverage, and reasoning styles. During annotation, we first design the hard-level tasks and label each question with the ground-truth answer. Based on these, we then construct the medium and easy tasks. The primary differences between difficulty levels lie in the number and types of answer choices. Details of the annotation procedure and difficulty levels are provided in our [paper](https://open-space-reasoning.github.io/static/papers/M4R_paper.pdf).
+This benchmark includes approximately 2,000 videos and 19,000 human-annotated question-answer pairs, covering a wide range of reasoning tasks (as shown in Figure 1). We provide a **sample set (approximately 4K examples)** for efficiency evaluation, randomly selected from the **full dataset (19K examples)**. All annotations were performed by highly educated annotators, each holding at least a master's degree in engineering-related fields such as mathematics or computer science. The dataset features a variety of video lengths, categories, and frame counts, and spans three primary open-space reasoning scenarios: **land space**, **water space**, and **air space**. An overview of the dataset’s characteristics is shown in Figure 2, which illustrates the distributions of video duration, domain coverage, and reasoning styles. During annotation, we first design the hard-level tasks and label each question with the ground-truth answer. Based on these, we then construct the medium and easy tasks. The primary differences between difficulty levels lie in the number and types of answer choices.
 
 ### Dataset Format:
 
@@ -337,24 +269,9 @@ python3 -m pip install sentencepiece;
 
 
 
-## Citation
-If you find the repository useful, please cite the study
-``` Bash
-@article{gu2025m4r,
-  title={Measuring Massive Multimodal Understanding and Reasoning in Open Space},
-  author={Gu, Shangding and Wang, Xiaohan and Ying, Donghao and Zhao, Haoyu and Yang, Runing and Li, Boyi and Jin, Ming and Pavone, Marco and Yeung-Levy, Serena and Wang, Jun and Song, Dawn and Spanos, Costas},
-  journal={Github},
-  year={2025}
-}
-```
 
 
 
-
-
-## Acknowledgment
-
-This repository is adapted from [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval) for use in our benchmark. We thank the contributors of *lmms-eval* for their efforts and contributions.
 
 
 
