@@ -89,13 +89,8 @@ uv pip install -e .
 
 ## Download Dataset
 
-You can download the dataset directly from our [Hugging Face repository](https://huggingface.co/datasets/Open-Space-Reasoning/Benchmark).
-```
-git lfs install
-git clone https://huggingface.co/datasets/Open-Space-Reasoning/M4R
-```
-If you encounter any issues during the download, we also provide a zipped version for convenience:
-[Download Dataset (ZIP)](https://huggingface.co/datasets/Open-Space-Reasoning/M4R-zip)
+You can download the dataset directly from our [Hugging Face repository](https://huggingface.co/datasets/Accident-Bench/Dataset).
+
 
 
 
@@ -104,7 +99,7 @@ If you encounter any issues during the download, we also provide a zipped versio
 Here's a basic evaluation example:
 
 
-> Download the dataset from [Hugging Face](https://huggingface.co/datasets/Open-Space-Reasoning/Benchmark), and set the dataset path to the corresponding task file. For example, specify the dataset path as `/your-dataset-path/land_space/short/hard/spatial_reasoning.json` in the task configuration file located at `/Open-Space-Reasoning/lmms_eval/tasks/land_space_short/land_space_hard.yaml`.
+> Download the dataset from [Hugging Face](https://huggingface.co/datasets/Accident-Bench/Dataset), and set the dataset path to the corresponding task file. For example, specify the dataset path as `/your-dataset-path/land_space/short/hard/spatial_reasoning.json` in the task configuration file located at `/Open-Space-Reasoning/lmms_eval/tasks/land_space_short/land_space_hard.yaml`.
 
 
 ```bash
