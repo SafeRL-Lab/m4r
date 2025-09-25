@@ -6,24 +6,13 @@
 
 # Content
   - [About the Dataset](#About-the-Dataset)
-    - [Dataset Format](#Dataset-Format)
-    - [Dataset Distribution](#Dataset-Distribution)
-    - [Three Space Settings](#Three-Space-Settings)
-    - [Reasoning Settings](#Reasoning-Settings)
-    - [One Example in Land Space Settings](#One-Example-in-Land-Space-Settings)
+  - [Dataset Format](#Dataset-Format)
   - [Installation](#Installation)
   - [Download Dataset](#Download-Dataset)
   - [Basic Usage](#Basic-Usage)
-  - [Citation](#Citation)
-  - [Acknowledgment](#Acknowledgment)
 
  ---
 
-<!--<p align="center" width="80%">
-<img src="https://github.com/SafeRL-Lab/Open-Space-Reasoning/blob/master/docs/figures/logo-m4r.png"  width="70%" height="70%">
-</p>
-# M4R: Measuring Massive Multimodal Understanding and Reasoning in Open Space
--->
 
 
 
@@ -75,51 +64,7 @@ evaluate temporal reasoning, spatial reasoning, and intent reasoning.</center>
  </div>
 
  
-### Dataset Distribution:
- <div align=center>
- <img src="./docs/figures/data_distribution.png" width="95%"/> 
- </div>
-<div align=center>
-<center style="color:#000000;text-decoration:underline">Figure 2. Distribution of video and task properties in the M4R benchmark.</center>
- </div>
 
-
-
-### Three Space Settings
-
-<div align=center>
- <img src="./docs/figures/three-example-scenarios.png" width="95%"/> 
- </div>
-<div align=center>
-<center style="color:#000000;text-decoration:underline">Figure 3. Examples of multimodal Understanding and Reasoning in Open-Space Scenarios.</center>
- </div>
-
-### Reasoning Settings:
-
- <div align=center>
- <img src="./docs/figures/reasoning-settings.png" width="95%"/> 
- </div>
-<div align=center>
-<center style="color:#000000;text-decoration:underline">Figure 4.  Examples of reasoning question settings in M4R across three key reasoning types: Temporal
-Reasoning, which involves understanding event sequences and motion over time; Spatial Reasoning,
-which focuses on relative positioning and orientation in space; and Intent Reasoning, which evaluates
-understanding of goal-directed behaviors and decision-making in dynamic environments..</center>
- </div>
-
- ### One Example in Land Space Settings:
-
- <div align=center>
- <img src="./docs/figures/land-space-examples.png" width="95%"/> 
- </div>
-<div align=center>
-<center style="color:#000000;text-decoration:underline">Figure 5.  Land-space traffic accident scenarios for open-space video understanding and reasoning include
-  <span style="color:cyan;">intersection collisions</span>,
-  <span style="color:blue;">urban road accidents</span>,
-  <span style="color:gray;">nighttime incidents</span>,
-  <span style="color:orange;">rural road accidents</span>,
-  <span style="color:pink;">snow-covered road collisions</span>, and
-  <span style="color:green;">freeway accidents</span>.</center>
- </div>
  
 ## Installation
 
