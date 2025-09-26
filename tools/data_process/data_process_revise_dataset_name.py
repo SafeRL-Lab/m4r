@@ -21,5 +21,5 @@ def rename_files_in_folder(folder_path):
     print("重命名完成")
 
 # 用法示例
-folder_path = "//Users/shangding/Downloads/Documents/Open_space_reasoning/ocean/ocean_space/long_reasoning"
+folder_path = "/Users/Downloads/Documents/Open_space_reasoning/ocean/ocean_space/long_reasoning"
 rename_files_in_folder(folder_path)
