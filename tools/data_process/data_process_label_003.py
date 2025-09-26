@@ -1,8 +1,8 @@
 import os
 import json
 
-input_dir = "/Users/shangding/Documents/paper-submission/MM-AD-Bench/forth_investigation/label_003"    # 替换为你的文件夹路径
-output_path = "/Users/shangding/Documents/paper-submission/MM-AD-Bench/forth_investigation/all_merged_label_003.json"
+input_dir = "/Users/Documents/paper-submission/MM-AD-Bench/forth_investigation/label_003"    # 
+output_path = "/Users/Documents/paper-submission/MM-AD-Bench/forth_investigation/all_merged_label_003.json"
 
 merged_items = []
 
